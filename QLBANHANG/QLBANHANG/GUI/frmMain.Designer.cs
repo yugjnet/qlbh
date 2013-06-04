@@ -127,8 +127,9 @@
             // NhomHangToolStripMenuItem
             // 
             this.NhomHangToolStripMenuItem.Name = "NhomHangToolStripMenuItem";
-            this.NhomHangToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.NhomHangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.NhomHangToolStripMenuItem.Text = "Nhóm hàng";
+            this.NhomHangToolStripMenuItem.Click += new System.EventHandler(this.NhomHangToolStripMenuItem_Click);
             // 
             // HangHoaToolStripMenuItem
             // 

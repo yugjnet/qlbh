@@ -10,7 +10,7 @@ namespace QLBANHANG.DAO
     class Connection
     {
         private static SqlConnection cnn;
-
+       
         public static SqlConnection Cnn
         {
             get { return Connection.cnn; }
