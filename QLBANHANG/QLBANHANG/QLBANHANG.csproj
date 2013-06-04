@@ -51,6 +51,7 @@
     <Compile Include="BLO\NhaCCBLO.cs" />
     <Compile Include="BLO\NhomHangBLO.cs" />
     <Compile Include="BLO\QLBanHangBLO.cs" />
+    <Compile Include="DAO\Common.cs" />
     <Compile Include="DAO\Connection.cs" />
     <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\NhaCCDAO.cs" />

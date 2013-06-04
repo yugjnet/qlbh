@@ -59,11 +59,9 @@ namespace QLBANHANG.GUI
         private void phan_quyen_nhap_hang()
         {
             TaoUserMoiToolStripMenuItem.Enabled = false;
-            XuatHangToolStripMenuItem.Enabled = false;
             BanHangToolStripMenuItem.Enabled = false;
             KiemKeToolStripMenuItem.Enabled = false;
             BaoCaoThongKeToolStripMenuItem.Enabled = false;
-            HoTroKhachHangToolStripMenuItem.Enabled = false;
         }
 
         private void phan_quyen_xuat_hang()
@@ -74,7 +72,6 @@ namespace QLBANHANG.GUI
             BanHangToolStripMenuItem.Enabled = false;
             KiemKeToolStripMenuItem.Enabled = false;
             BaoCaoThongKeToolStripMenuItem.Enabled = false;
-            HoTroKhachHangToolStripMenuItem.Enabled = false;
         }
 
         private void phan_quyen_ban_hang()
@@ -82,10 +79,8 @@ namespace QLBANHANG.GUI
             TaoUserMoiToolStripMenuItem.Enabled = false;
             QuanLyToolStripMenuItem.Enabled = false;
             NhapHangToolStripMenuItem.Enabled = false;
-            XuatHangToolStripMenuItem.Enabled = false;
             KiemKeToolStripMenuItem.Enabled = false;
             BaoCaoThongKeToolStripMenuItem.Enabled = false;
-            HoTroKhachHangToolStripMenuItem.Enabled = false;
         }
 
         private void phan_quyen_kiem_ke()
@@ -93,10 +88,8 @@ namespace QLBANHANG.GUI
             TaoUserMoiToolStripMenuItem.Enabled = false;
             QuanLyToolStripMenuItem.Enabled = false;
             NhapHangToolStripMenuItem.Enabled = false;
-            XuatHangToolStripMenuItem.Enabled = false;
             BanHangToolStripMenuItem.Enabled = false;
             BaoCaoThongKeToolStripMenuItem.Enabled = false;
-            HoTroKhachHangToolStripMenuItem.Enabled = false;
         }
 
         private void phan_quyen_tin_hoc()
@@ -104,9 +97,7 @@ namespace QLBANHANG.GUI
             TaoUserMoiToolStripMenuItem.Enabled = false;
             QuanLyToolStripMenuItem.Enabled = false;
             NhapHangToolStripMenuItem.Enabled = false;
-            XuatHangToolStripMenuItem.Enabled = false;
             BanHangToolStripMenuItem.Enabled = false;
-            HoTroKhachHangToolStripMenuItem.Enabled = false;
         }
 
         void frm_OnDangNhapThanhCong(object sender, DangNhapDTO e)
@@ -133,7 +124,29 @@ namespace QLBANHANG.GUI
             frm.ShowDialog();
         }
 
-       
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmLAPHOADONBANHANG frm = new frmLAPHOADONBANHANG();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmQLHANGHOA frm = new frmQLHANGHOA();
+            frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmQLNHOMHANG frm = new frmQLNHOMHANG();
+            frm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmNHACC frm = new frmNHACC();
+            frm.ShowDialog();
+        }
+      
     }
 }
