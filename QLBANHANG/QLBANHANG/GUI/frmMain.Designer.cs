@@ -54,6 +54,7 @@
             this.LapBaoCaoThongKeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HoTroKhachHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongTinHangHoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,20 +88,20 @@
             // TaoUserMoiToolStripMenuItem
             // 
             this.TaoUserMoiToolStripMenuItem.Name = "TaoUserMoiToolStripMenuItem";
-            this.TaoUserMoiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.TaoUserMoiToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.TaoUserMoiToolStripMenuItem.Text = "Tạo User mới";
             // 
             // DangNhapToolStripMenuItem
             // 
             this.DangNhapToolStripMenuItem.Name = "DangNhapToolStripMenuItem";
-            this.DangNhapToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.DangNhapToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.DangNhapToolStripMenuItem.Text = "Đăng nhập";
             this.DangNhapToolStripMenuItem.Click += new System.EventHandler(this.DangNhapToolStripMenuItem_Click);
             // 
             // ThoatToolStripMenuItem
             // 
             this.ThoatToolStripMenuItem.Name = "ThoatToolStripMenuItem";
-            this.ThoatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ThoatToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.ThoatToolStripMenuItem.Text = "Thoát";
             this.ThoatToolStripMenuItem.Click += new System.EventHandler(this.ThoatToolStripMenuItem_Click);
             // 
@@ -253,11 +254,22 @@
             this.ThongTinHangHoaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.ThongTinHangHoaToolStripMenuItem.Text = "Thông tin hàng hóa";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(124, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 514);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
@@ -299,6 +311,7 @@
         private System.Windows.Forms.ToolStripMenuItem QuanLyPhieuKiemKeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LapBaoCaoThongKeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ThongTinHangHoaToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

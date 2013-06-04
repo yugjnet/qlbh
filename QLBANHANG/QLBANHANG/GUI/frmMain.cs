@@ -46,6 +46,8 @@ namespace QLBANHANG.GUI
             }
             else
                 menuStrip1.Enabled = false;
+            Common.tenDangNhap = dangNhapDTO.TenDN;
+            Common.MaNV = dangNhapDTO.MaNV;
         }
 
         private void reset_all_tooltip()
@@ -124,8 +126,5 @@ namespace QLBANHANG.GUI
             frm.ShowDialog();
             phan_quyen();
         }
-
-       
-        
     }
 }

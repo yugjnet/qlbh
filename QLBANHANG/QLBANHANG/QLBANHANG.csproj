@@ -48,9 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLO\DangNhapBLO.cs" />
-    <Compile Include="DAO\Connection.cs" />
-    <Compile Include="DAO\DangNhapDAO.cs" />
+    <Compile Include="DAO\Common.cs" />
+    <Compile Include="DAO\Connection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\DangNhapDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\NhomHangDAO.cs" />
     <Compile Include="DTO\DangNhapDTO.cs" />
+    <Compile Include="DTO\NhomHangDTO.cs" />
     <Compile Include="GUI\frmBAOCAOTHONGKE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +112,18 @@
     <Compile Include="GUI\frmQLNHOMHANG.Designer.cs">
       <DependentUpon>frmQLNHOMHANG.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmQUANLYHOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQUANLYHOADON.Designer.cs">
+      <DependentUpon>frmQUANLYHOADON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTRACUUTHONGTINSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTRACUUTHONGTINSP.Designer.cs">
+      <DependentUpon>frmTRACUUTHONGTINSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmBAOCAOTHONGKE.resx">
@@ -133,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQLNHOMHANG.resx">
       <DependentUpon>frmQLNHOMHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQUANLYHOADON.resx">
+      <DependentUpon>frmQUANLYHOADON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTRACUUTHONGTINSP.resx">
+      <DependentUpon>frmTRACUUTHONGTINSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
