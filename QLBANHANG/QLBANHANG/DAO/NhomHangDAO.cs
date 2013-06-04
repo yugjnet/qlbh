@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using QLBANHANG.DTO;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace QLBANHANG.DAO
 {
     class NhomHangDAO
     {
-        private string _error;
+        private static SqlDataAdapter adapter;
+
+        private string _error="";
 
         public string Error
         {
@@ -19,7 +22,7 @@ namespace QLBANHANG.DAO
 
         public bool Insert(NhomHangDTO nhomHangDTO)
         {
-            var lenh = "Insert into NhomHang values('" + nhomHangDTO.MaNhom + "','" + nhomHangDTO.TenNhom + "')";
+            var lenh = "Insert into NhomHang values(N'" + nhomHangDTO.MaNhom.Trim() + "',N'" + nhomHangDTO.TenNhom.Trim() + "')";
             var cmd = new SqlCommand(lenh,Connection.Cnn);
             try
             {
@@ -36,6 +39,24 @@ namespace QLBANHANG.DAO
             return true;
         }
 
+        public void Delete(DataTable bangNH)
+        {
+            if (adapter != null)
+            {
+                adapter.Update(bangNH);
+                bangNH.AcceptChanges();
+            }
+        }
 
+        public DataTable Doc_dl()
+        {
+            var bangNH = new DataTable("NHOMHANG");
+            var lenh = "select * from NhomHang";
+            adapter = new SqlDataAdapter(lenh, Connection.Cnn);
+            adapter.FillSchema(bangNH, SchemaType.Mapped);
+            adapter.Fill(bangNH);
+            var cmdb = new SqlCommandBuilder(adapter);
+            return bangNH;
+        }
     }
 }

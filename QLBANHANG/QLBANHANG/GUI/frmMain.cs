@@ -125,6 +125,12 @@ namespace QLBANHANG.GUI
             phan_quyen();
         }
 
+        private void NhomHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLNHOMHANG frm = new frmQLNHOMHANG();
+            frm.ShowDialog();
+        }
+
        
         
     }

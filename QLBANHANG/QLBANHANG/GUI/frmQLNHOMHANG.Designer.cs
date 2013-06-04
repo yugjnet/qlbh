@@ -59,6 +59,7 @@
             this.tcNhomhang.SelectedIndex = 0;
             this.tcNhomhang.Size = new System.Drawing.Size(453, 282);
             this.tcNhomhang.TabIndex = 0;
+            this.tcNhomhang.Selected += new System.Windows.Forms.TabControlEventHandler(this.tcNhomhang_Selected);
             // 
             // tabPage1
             // 
@@ -94,6 +95,7 @@
             this.btnBoQua.TabIndex = 5;
             this.btnBoQua.Text = "Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
             // 
             // txtTenNhom
             // 
@@ -135,6 +137,7 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // tabPage3
             // 
@@ -157,6 +160,7 @@
             this.btnXoa.TabIndex = 1;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // lbNhomHang
             // 
